@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="ALL" />
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="406cfe37-575c-463a-ad7a-0444cfadae47" name="Default Changelist" comment="">
+    <list default="true" id="13415971-82c9-49e2-a8e1-d8e2ee36583b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/portal/Request/BaseRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/portal/Request/SearchItemRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/portal/Response/BaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/portal/Response/SearchItemResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/portal/config/Business/Imp/SearchApiBusinessImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/portal/config/Business/base/SearchApiBusiness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/portal/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/portal/dto/SearchItemApiJsonResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/portal/dto/SearchItemsJsonResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/portal/entity/ItemsEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/portal/repository/ItemSearchRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/changes/6.create-item-category-table-and-insertion-changelog.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/changes/7.create-item-table-and-insertion-changelog.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/changes/8.create-order-tracking-steps-table-insertion-changelog.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/changes/9.create-item-review-table-and-insertion-changelog.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineShoppingApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineShoppingApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopping/portal/OnlineShoppingAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopping/portal/OnlineShoppingAppApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopping/portal/controller/WelcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopping/portal/controller/WelcomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shopping/portal/OnlineShoppingAppApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shopping/portal/OnlineShoppingAppApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/shopping/portal/controller/WelcomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/shopping/portal/controller/WelcomeController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +40,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -33,179 +52,146 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="workOffline" value="true" />
+        <option name="mavenHome" value="C:\Program Files\intellijj web\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
-  <component name="ProjectId" id="1mrf1VUNobfYzveRTVSClD2wwYa" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="1nIOlr6HjkvSnKFi5xxKxg2RALr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../services/Service market pakistan/servicemarket-be" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.shopping.portal.service.admin.impl" />
-      <recent name="com.shopping.portal.service.admin.base" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Talha\Desktop\servicemarket-be-shopping-portal\src\main\resources\db" />
-      <recent name="C:\Users\Talha\Desktop\servicemarket-be-shopping-portal\src\main\resources\changelog" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.shopping.portal.controller" />
+      <recent name="com.shopping.portal.Request" />
     </key>
   </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="mvn liquibase:clearCheckSums" />
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.OnlineShoppingAppApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OnlineShoppingAppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.shopping.portal.OnlineShoppingAppApplication" />
-      <module name="OnlineShoppingApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.shopping.portal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OnlineShoppingAppApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OnlineShoppingApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.shopping.portal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.shopping.portal" />
-      <option name="MAIN_CLASS_NAME" value="com.shopping.portal.OnlineShoppingAppApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="OnlineShoppingAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="OnlineShoppingApp" />
+      <module name="shoppingportal" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.shopping.portal.OnlineShoppingAppApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.OnlineShoppingAppApplication" />
-        <item itemvalue="JUnit.OnlineShoppingAppApplicationTests" />
-      </list>
-    </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="406cfe37-575c-463a-ad7a-0444cfadae47" name="Default Changelist" comment="" />
-      <created>1610256415151</created>
+      <changelist id="13415971-82c9-49e2-a8e1-d8e2ee36583b" name="Default Changelist" comment="" />
+      <created>1611074293433</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1610256415151</updated>
-      <workItem from="1610382027530" duration="1984000" />
+      <updated>1611074293433</updated>
+      <workItem from="1611074296614" duration="3249000" />
+      <workItem from="1611163119901" duration="10330000" />
+      <workItem from="1611223188024" duration="2883000" />
+      <workItem from="1611251333651" duration="3234000" />
+      <workItem from="1611256106482" duration="4566000" />
+      <workItem from="1611296316469" duration="17057000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="22" key="#Project_Structure" timestamp="1610824110883">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="540" y="232" key="#Assign_Data_Sources" timestamp="1611255852946">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="275" y="22" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1610824110883" />
-    <state x="310" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610826693297">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="540" y="232" key="#Assign_Data_Sources/0.0.1280.680@0.0.1280.680" timestamp="1611255852946" />
+    <state x="0" y="19" key="#Inspections" timestamp="1611172659206">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="310" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1610826693297" />
-    <state x="213" y="19" key="DBNavigator.ProjectSettingsDialog" timestamp="1610826061667">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="0" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1611172659206" />
+    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1611340681561">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="213" y="19" key="DBNavigator.ProjectSettingsDialog/0.0.1366.728@0.0.1366.728" timestamp="1610826061667" />
-    <state width="1323" height="35" key="GridCell.Tab.0.bottom" timestamp="1610827539176">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1611340681561" />
+    <state x="104" y="209" width="432" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1611172624213">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1323" height="35" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1610827539176" />
-    <state width="1323" height="35" key="GridCell.Tab.0.center" timestamp="1610827539175">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="104" y="209" width="432" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1611172624213" />
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611223469290">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1323" height="35" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1610827539175" />
-    <state width="1323" height="35" key="GridCell.Tab.0.left" timestamp="1610827539175">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1611223469290" />
+    <state x="150" y="0" key="DBNavigator.ProjectSettingsDialog" timestamp="1611331459786">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1323" height="35" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1610827539175" />
-    <state width="1323" height="35" key="GridCell.Tab.0.right" timestamp="1610827539175">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="150" y="0" key="DBNavigator.ProjectSettingsDialog/0.0.1280.680@0.0.1280.680" timestamp="1611331459786" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1611256688824">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1323" height="35" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1610827539175" />
-    <state x="184" y="6" key="SettingsEditor" timestamp="1610791971086">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1280.680@0.0.1280.680" timestamp="1611256688824" />
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1611330495578">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1610791971086" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1610822706923">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1611330495578" />
+    <state width="1237" height="18" key="GridCell.Tab.0.bottom" timestamp="1611397614250">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1610822706923" />
-    <state x="379" y="96" width="607" height="536" key="find.popup" timestamp="1610826133035">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1237" height="18" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1611397614250" />
+    <state width="1237" height="18" key="GridCell.Tab.0.center" timestamp="1611397614250">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="379" y="96" width="607" height="536" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1610826133035" />
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1610826031889">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1237" height="18" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1611397614250" />
+    <state width="1237" height="18" key="GridCell.Tab.0.left" timestamp="1611397614250">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1610826031889" />
+    <state width="1237" height="18" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1611397614250" />
+    <state width="1237" height="18" key="GridCell.Tab.0.right" timestamp="1611397614250">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="18" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1611397614250" />
+    <state width="1237" height="18" key="GridCell.Tab.1.bottom" timestamp="1611397614250">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="18" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1611397614250" />
+    <state width="1237" height="18" key="GridCell.Tab.1.center" timestamp="1611397614250">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="18" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1611397614250" />
+    <state width="1237" height="18" key="GridCell.Tab.1.left" timestamp="1611397614250">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="18" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1611397614250" />
+    <state width="1237" height="18" key="GridCell.Tab.1.right" timestamp="1611397614250">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="18" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1611397614250" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1611260638662">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1611260638662" />
+    <state x="297" y="151" key="run.anything.popup" timestamp="1611341732159">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1611341732159" />
   </component>
 </project>

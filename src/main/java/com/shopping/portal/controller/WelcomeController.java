@@ -10,6 +10,7 @@ public class WelcomeController {
 
     @GetMapping("/")
     String greetings() {
+
         return "Greetings! Shopping Portal Service Market pakistan";
     }
 

@@ -24,25 +24,29 @@
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
     <loaded-nodes>
-      <connection connection-id="63a2a3d5-71c4-4d16-a907-5db8951f1313">
-        <schema name="public" object-types="function, sequence, table, constraint, view, index, column, dataset trigger" />
+      <connection connection-id="48ada844-9e41-42e4-9a1b-334b8c11ef8c">
+        <schema name="public" object-types="sequence, function, view, table" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="63a2a3d5-71c4-4d16-a907-5db8951f1313">
-      <console name="ShoppingPortalDatabase" type="STANDARD" schema="information_schema" session="Main" />
+    <connection id="48ada844-9e41-42e4-9a1b-334b8c11ef8c">
+      <console name="Connection" type="STANDARD" schema="information_schema" session="Main" />
     </connection>
-    <connection id="f372e5ec-c5a9-48f8-a46c-18dd1bf6d485">
-      <console name="Connection" type="STANDARD" schema="" session="Main" />
+    <connection id="70db0e83-e052-49b2-b2b4-8154433091a9">
+      <console name="Connection 1" type="STANDARD" schema="" session="Main" />
+    </connection>
+    <connection id="e367f7d2-33a3-4333-8567-35a62d2450ca">
+      <console name="Connection 2" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="63a2a3d5-71c4-4d16-a907-5db8951f1313" />
-    <connection id="f372e5ec-c5a9-48f8-a46c-18dd1bf6d485" />
+    <connection id="48ada844-9e41-42e4-9a1b-334b8c11ef8c" />
+    <connection id="70db0e83-e052-49b2-b2b4-8154433091a9" />
+    <connection id="e367f7d2-33a3-4333-8567-35a62d2450ca" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -70,10 +74,10 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="63a2a3d5-71c4-4d16-a907-5db8951f1313" active="true">
+      <connection id="48ada844-9e41-42e4-9a1b-334b8c11ef8c" active="true">
         <database>
-          <name value="ShoppingPortalDatabase" />
-          <description value="Database" />
+          <name value="Connection" />
+          <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
           <database-version value="12.5" />
@@ -116,6 +120,7 @@
           <restore-workspace value="true" />
           <restore-workspace-deep value="true" />
           <environment-type value="default" />
+          <connectivity-timeout value="5" />
           <idle-time-to-disconnect value="30" />
           <idle-time-to-disconnect-pool value="5" />
           <credential-expiry-time value="10" />
@@ -153,10 +158,10 @@
           <object-name-filters />
         </object-filters>
       </connection>
-      <connection id="f372e5ec-c5a9-48f8-a46c-18dd1bf6d485" active="true">
+      <connection id="70db0e83-e052-49b2-b2b4-8154433091a9" active="true">
         <database>
-          <name value="Connection" />
-          <description value="" />
+          <name value="Connection 1" />
+          <description value="jdbc:postgresql://ec2-54-78-127-245.eu-west-1.compute.amazonaws.com" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
           <database-version value="9999.0" />
@@ -166,10 +171,10 @@
           <url-type value="DATABASE" />
           <host value="localhost" />
           <port value="5432" />
-          <database value="postgres" />
+          <database value="d6cgc6nsl5gmkf" />
           <type value="USER_PASSWORD" />
-          <user value="" />
-          <deprecated-pwd value="" />
+          <user value="wpnmlwcrcnkobq" />
+          <deprecated-pwd value="OTBjMjQ3MTFmMzg2YzM1MjE0MGI3NTBjMWNiY2IxYTg4NmMzNDUwMGJmZjRmYTBhNGYwNjI2MmFkZjkzNTQ3Mg==" />
         </database>
         <properties>
           <auto-commit value="false" />
@@ -199,6 +204,91 @@
           <restore-workspace value="true" />
           <restore-workspace-deep value="true" />
           <environment-type value="default" />
+          <connectivity-timeout value="5" />
+          <idle-time-to-disconnect value="30" />
+          <idle-time-to-disconnect-pool value="5" />
+          <credential-expiry-time value="10" />
+          <max-connection-pool-size value="7" />
+          <alternative-statement-delimiter value="" />
+        </details>
+        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
+          <object-type-filter use-master-settings="true">
+            <object-type name="SCHEMA" enabled="true" />
+            <object-type name="USER" enabled="true" />
+            <object-type name="ROLE" enabled="true" />
+            <object-type name="PRIVILEGE" enabled="true" />
+            <object-type name="CHARSET" enabled="true" />
+            <object-type name="TABLE" enabled="true" />
+            <object-type name="VIEW" enabled="true" />
+            <object-type name="MATERIALIZED_VIEW" enabled="true" />
+            <object-type name="NESTED_TABLE" enabled="true" />
+            <object-type name="COLUMN" enabled="true" />
+            <object-type name="INDEX" enabled="true" />
+            <object-type name="CONSTRAINT" enabled="true" />
+            <object-type name="DATASET_TRIGGER" enabled="true" />
+            <object-type name="DATABASE_TRIGGER" enabled="true" />
+            <object-type name="SYNONYM" enabled="true" />
+            <object-type name="SEQUENCE" enabled="true" />
+            <object-type name="PROCEDURE" enabled="true" />
+            <object-type name="FUNCTION" enabled="true" />
+            <object-type name="PACKAGE" enabled="true" />
+            <object-type name="TYPE" enabled="true" />
+            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
+            <object-type name="ARGUMENT" enabled="true" />
+            <object-type name="DIMENSION" enabled="true" />
+            <object-type name="CLUSTER" enabled="true" />
+            <object-type name="DBLINK" enabled="true" />
+          </object-type-filter>
+          <object-name-filters />
+        </object-filters>
+      </connection>
+      <connection id="e367f7d2-33a3-4333-8567-35a62d2450ca" active="true">
+        <database>
+          <name value="Connection 2" />
+          <description value="jdbc:postgresql://ec2-54-78-127-245.eu-west-1.compute.amazonaws.com:5432" />
+          <database-type value="POSTGRES" />
+          <config-type value="BASIC" />
+          <database-version value="9999.0" />
+          <driver-source value="BUILTIN" />
+          <driver-library value="" />
+          <driver value="" />
+          <url-type value="DATABASE" />
+          <host value="localhost" />
+          <port value="5432" />
+          <database value="d6cgc6nsl5gmkf" />
+          <type value="USER_PASSWORD" />
+          <user value="wpnmlwcrcnkobq" />
+          <deprecated-pwd value="OTBjMjQ3MTFmMzg2YzM1MjE0MGI3NTBjMWNiY2IxYTg4NmMzNDUwMGJmZjRmYTBhNGYwNjI2MmFkZjkzNTQ3Mg==" />
+        </database>
+        <properties>
+          <auto-commit value="false" />
+        </properties>
+        <ssh-settings>
+          <active value="false" />
+          <proxy-host value="" />
+          <proxy-port value="22" />
+          <proxy-user value="" />
+          <deprecated-proxy-pwd value="" />
+          <auth-type value="PASSWORD" />
+          <key-file value="" />
+          <key-passphrase value="" />
+        </ssh-settings>
+        <ssl-settings>
+          <active value="false" />
+          <certificate-authority-file value="" />
+          <client-certificate-file value="" />
+          <client-key-file value="" />
+        </ssl-settings>
+        <details>
+          <charset value="UTF-8" />
+          <session-management value="true" />
+          <ddl-file-binding value="true" />
+          <database-logging value="false" />
+          <connect-automatically value="true" />
+          <restore-workspace value="true" />
+          <restore-workspace-deep value="true" />
+          <environment-type value="default" />
+          <connectivity-timeout value="5" />
           <idle-time-to-disconnect value="30" />
           <idle-time-to-disconnect-pool value="5" />
           <credential-expiry-time value="10" />
@@ -365,12 +455,19 @@
           <content-type name="DTD" enabled="true" />
           <content-type name="HTML" enabled="true" />
           <content-type name="XHTML" enabled="true" />
+          <content-type name="CSS" enabled="true" />
           <content-type name="Java" enabled="true" />
           <content-type name="SQL" enabled="true" />
           <content-type name="PL/SQL" enabled="true" />
+          <content-type name="JavaScript" enabled="true" />
           <content-type name="JSON" enabled="true" />
           <content-type name="JSON5" enabled="true" />
+          <content-type name="JSP" enabled="true" />
+          <content-type name="JSPx" enabled="true" />
           <content-type name="Groovy" enabled="true" />
+          <content-type name="FTL" enabled="true" />
+          <content-type name="GSP" enabled="true" />
+          <content-type name="VTL" enabled="true" />
           <content-type name="AIDL" enabled="true" />
           <content-type name="YAML" enabled="true" />
           <content-type name="Manifest" enabled="true" />
