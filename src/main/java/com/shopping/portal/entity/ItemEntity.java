@@ -47,4 +47,6 @@ public class ItemEntity {
 
     @Column(name = "details")
     private String details;
+
+
 }
