@@ -3,28 +3,28 @@ package com.shopping.portal.request;
 import lombok.*;
 
 import javax.validation.constraints.NotBlank;
-import java.sql.Timestamp;
 
 
 @Getter
 @Setter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-public class ItemReviewRequest {
+public class OrderCartRequest  {
 
     private Integer id;
 
     @NotBlank
-    private String comment;
+    private int refId;
 
     @NotBlank
-    private Timestamp commentDate;
+    private int totalPrice;
 
     @NotBlank
-    private int itemId;
+    private int orderTrackingId;
 
     @NotBlank
     private String userName;
+
 
 }
