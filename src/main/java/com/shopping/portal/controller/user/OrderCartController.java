@@ -1,6 +1,6 @@
-package com.shopping.portal.controller;
+package com.shopping.portal.controller.user;
 
-import com.shopping.portal.business.base.OrderCartBusiness;
+import com.shopping.portal.business.user.base.OrderCartBusiness;
 import com.shopping.portal.request.OrderCartRequest;
 import com.shopping.portal.response.BaseResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/order")

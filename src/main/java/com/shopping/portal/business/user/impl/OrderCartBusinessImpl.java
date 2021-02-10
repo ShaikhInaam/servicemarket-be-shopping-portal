@@ -1,6 +1,6 @@
-package com.shopping.portal.business.impl;
+package com.shopping.portal.business.user.impl;
 
-import com.shopping.portal.business.base.OrderCartBusiness;
+import com.shopping.portal.business.user.base.OrderCartBusiness;
 import com.shopping.portal.entity.OrderCartEntity;
 import com.shopping.portal.repository.OrderCartRepository;
 import com.shopping.portal.request.OrderCartRequest;

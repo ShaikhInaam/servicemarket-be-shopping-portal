@@ -31,6 +31,4 @@ public class ItemReviewEntity {
     @Column(name = "item_id")
     private int itemId;
 
-    @Column(name = "username")
-    private String userName;
 }

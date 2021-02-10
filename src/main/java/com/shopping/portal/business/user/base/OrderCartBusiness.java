@@ -1,4 +1,4 @@
-package com.shopping.portal.business.base;
+package com.shopping.portal.business.user.base;
 
 
 import com.shopping.portal.request.OrderCartRequest;
