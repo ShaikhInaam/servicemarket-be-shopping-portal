@@ -1,4 +1,4 @@
-package com.shopping.portal.service.admin.base;
+package com.shopping.portal.service.base;
 
 
 import com.shopping.portal.entity.ConfigurationEntity;
