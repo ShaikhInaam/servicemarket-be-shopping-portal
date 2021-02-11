@@ -24,6 +24,10 @@ public interface ItemCategoryRepository extends JpaRepository<ItemCategoriesEnti
     public List<ItemCategoriesEntity> getItemCategoriesForUser1();
 
 
+    @Query("Select e From ItemCategoriesEntity e left JOIN fetch e.items i where i.userName  =:username and i.deliveryCityId =:cityId")
+    public List<ItemCategoriesEntity> getItemCategoriesForAdmin(@Param("username") String username, @Param("cityId")  Integer cityId);
+
+
 
     // for admin
 

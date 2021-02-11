@@ -22,5 +22,10 @@ public class ItemServiceImpl implements ItemService {
         //return itemCategoryRepository.getItemCategoriesForUser1();
     }
 
+    @Override
+    public List<ItemCategoriesEntity> getItemCategoriesForAdmin(String username, Integer cityId) {
+        return itemCategoryRepository.getItemCategoriesForAdmin(username,cityId);
+    }
+
 
 }
