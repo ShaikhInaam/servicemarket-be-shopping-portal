@@ -5,24 +5,14 @@
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
-    <changeSet author="talha" id="5">
+    <changeSet author="talha" id="10">
 
         <sql>
 
 
-            CREATE SEQUENCE cat_seq;
-
-            CREATE TABLE item_categories(
-
-            category_name VARCHAR(25) NOT NULL,
-            id INT NOT NULL DEFAULT NEXTVAL ('cat_seq') , PRIMARY KEY (id)) ;
-
-            Insert into item_categories (category_name) values ('Fruits');
-            Insert into item_categories (category_name) values ('Vegetables');
-            Insert into item_categories (category_name) values ('Cosmetics');
-
-
-
+        INSERT INTO delivery_charges(city_id,charges,days)
+        Values (1,100,5),
+               (2,500,7);
         </sql>
 
     </changeSet>

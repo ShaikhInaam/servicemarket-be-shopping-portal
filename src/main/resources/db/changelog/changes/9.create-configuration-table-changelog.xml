@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet author="talha" id="9">
+
+        <sql>
+
+
+
+
+            CREATE SEQUENCE constants_seq;
+
+            CREATE TABLE configuration ( code VARCHAR(500) NOT NULL , message_english VARCHAR(50000) NOT NULL ,
+            id INT NOT NULL DEFAULT NEXTVAL ('constants_seq') , PRIMARY KEY (id)) ;
+
+            Insert into configuration (code, message_english) values ('00100', 'SUCCESS');
+            Insert into configuration (code, message_english) values ('00700', 'something went wrong! we are looking at our end, please try again in sometime');
+            Insert into configuration (code, message_english) values ('00800', 'Required field are missing');
+            Insert into configuration (code, message_english) values ('000100', 'GET');
+            Insert into configuration (code, message_english) values ('000200', 'POST');
+            Insert into configuration (code, message_english) values ('01000', 'shaikhinaam2@gmail.com,servicemarketpakistan@gmail.com');
+            Insert into configuration (code, message_english) values ('02000', 'servicemarketpakistan@gmail.com');
+            Insert into configuration (code, message_english) values ('03000', 'pdunhwsdnlvwdq');
+
+        </sql>
+
+    </changeSet>
+</databaseChangeLog>
