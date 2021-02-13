@@ -1,10 +1,8 @@
-package com.shopping.portal.service.user.impl;
+package com.shopping.portal.service.impl;
 
-import com.shopping.portal.entity.ItemCategoriesEntity;
 import com.shopping.portal.entity.ItemReviewEntity;
-import com.shopping.portal.repository.ItemCategoryRepository;
 import com.shopping.portal.repository.ItemReviewRepository;
-import com.shopping.portal.service.user.base.ItemReviewService;
+import com.shopping.portal.service.base.ItemReviewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

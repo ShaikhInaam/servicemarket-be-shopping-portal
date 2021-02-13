@@ -1,8 +1,8 @@
 package com.shopping.portal.controller;
 
-import com.shopping.portal.business.base.ItemReviewBusiness;
-import com.shopping.portal.request.ItemRequest;
-import com.shopping.portal.request.ItemReviewRequest;
+
+import com.shopping.portal.business.base.DeliveryCitiesBusiness;
+import com.shopping.portal.request.DeliveryCitiesRequest;
 import com.shopping.portal.response.BaseResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -14,16 +14,17 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping("/itemreview")
-public class ItemReviewsController {
+@RequestMapping("delivery")
+public class DeliveryCitiesController {
+
 
     @Autowired
-    ItemReviewBusiness itemReviewBusiness;
+    DeliveryCitiesBusiness deliveryCitiesBusiness;
 
-    @PostMapping("/getAll")
-    public ResponseEntity<BaseResponse> getAllItemsWithCategories(@Valid @RequestBody ItemReviewRequest request){
 
-        return ResponseEntity.ok(itemReviewBusiness.getAllReviews(request));
+    @PostMapping("/cities")
+    public ResponseEntity<BaseResponse> saveDeliveryCity(@Valid @RequestBody DeliveryCitiesRequest deliveryCitiesRequest) {
 
+        return ResponseEntity.ok(deliveryCitiesBusiness.saveDeliveryCity(deliveryCitiesRequest));
     }
 }

@@ -29,7 +29,6 @@ public class ItemReviewEntity {
     private Timestamp commentDate;
 
     @Column(name = "item_id")
-    private Integer itemId;
-
+    private int itemId;
 
 }
