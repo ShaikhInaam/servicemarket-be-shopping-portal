@@ -1,6 +1,6 @@
 package com.shopping.portal.util;
 
-import com.shopping.portal.service.admin.base.ConfigurationService;
+import com.shopping.portal.service.base.ConfigurationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

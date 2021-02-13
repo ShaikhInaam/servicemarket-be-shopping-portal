@@ -18,13 +18,24 @@
             category_id INT NOT NULL,
             item_price DOUBLE PRECISION NOT NULL,
             item_stock INT NOT NULL,
-            image_url VARCHAR(500) NOT NULL,
+            image_url VARCHAR(5000) NOT NULL,
             user_name VARCHAR(200) NOT NULL,
             Is_blocked VARCHAR(25) NOT NULL,
             details VARCHAR(1000) NOT NULL,
             delivery_city_id INT NOT NULL,
             id INT NOT NULL DEFAULT NEXTVAL ('item_seq') , PRIMARY KEY (id)) ;
 
+            Insert into item(item_name,category_id,item_price,item_stock,image_url,user_name,Is_blocked,details,delivery_city_id)
+            values ('Mango',1,88.5,1000,'imageurl1','talha','No','This is fruit product',1);
+
+            Insert into item(item_name,category_id,item_price,item_stock,image_url,user_name,Is_blocked,details,delivery_city_id)
+            values ('Onion',2,85,500,'imageurl2','inaam','No','This is veg product',2);
+
+            Insert into item(item_name,category_id,item_price,item_stock,image_url,user_name,Is_blocked,details,delivery_city_id)
+            values ('Apple',1,88.5,1000,'imageurl3','inaam','No','This is fruit product',1);
+
+            Insert into item(item_name,category_id,item_price,item_stock,image_url,user_name,Is_blocked,details,delivery_city_id)
+            values ('Potato',2,85,500,'imageurl4','talha','Yes','This is veg product',2);
 
 
         </sql>

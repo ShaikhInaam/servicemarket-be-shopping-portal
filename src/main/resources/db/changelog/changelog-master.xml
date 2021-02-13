@@ -11,7 +11,7 @@
     <include file="/db/changelog/changes/2.create-order-cart-info-table-changelog.xml"/>
     <include file="/db/changelog/changes/3.create-delivery-cities-table-changelog.xml"/>
     <include file="/db/changelog/changes/4.create-delivery-charges-table-changelog.xml"/>
-    <include file="/db/changelog/changes/5.create-item-category-table-and-insertion-changelog.xml "/>
+    <include file="/db/changelog/changes/5.create-item-category-table-and-insertion-changelog.xml"/>
     <include file="/db/changelog/changes/6.create-item-table-and-insertion-changelog.xml"/>
     <include file="/db/changelog/changes/7.create-order-tracking-steps-table-insertion-changelog.xml"/>
     <include file="/db/changelog/changes/8.create-item-review-table-and-insertion-changelog.xml"/>

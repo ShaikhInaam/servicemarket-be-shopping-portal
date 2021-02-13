@@ -12,11 +12,14 @@
 
             CREATE SEQUENCE cat_seq;
 
-            CREATE TABLE item_categories (
+            CREATE TABLE item_categories(
 
             category_name VARCHAR(25) NOT NULL,
             id INT NOT NULL DEFAULT NEXTVAL ('cat_seq') , PRIMARY KEY (id)) ;
 
+            Insert into item_categories (category_name) values ('Fruits');
+            Insert into item_categories (category_name) values ('Vegetables');
+            Insert into item_categories (category_name) values ('Cosmetics');
 
 
 
