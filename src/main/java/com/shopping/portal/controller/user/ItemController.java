@@ -1,16 +1,11 @@
 package com.shopping.portal.controller.user;
 
 import com.shopping.portal.business.user.base.ItemBusiness;
-import com.shopping.portal.request.BaseRequest;
-import com.shopping.portal.request.ItemRequest;
-import com.shopping.portal.request.ItemReviewRequest;
+import com.shopping.portal.request.*;
 import com.shopping.portal.response.BaseResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -47,6 +42,16 @@ public class ItemController {
         return ResponseEntity.ok(itemBusiness.getAllReviews(request));
 
     }
+    //admin
 
+    @DeleteMapping("/delete/item")
+    public ResponseEntity<BaseResponse> deleteItemByUserName(@Valid @RequestBody ItemDeleteRequest itemDeleteRequest){
+        return ResponseEntity.ok(itemBusiness.deleteItemByUserName(itemDeleteRequest));
+    }
 
+    @PostMapping("/add/item")
+    public ResponseEntity<BaseResponse> addNewItem(@Valid @RequestBody ItemAddRequest itemAddRequest){
+
+        return ResponseEntity.ok(itemBusiness.addItem(itemAddRequest));
+    }
 }

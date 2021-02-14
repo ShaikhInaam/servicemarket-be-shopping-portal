@@ -6,10 +6,9 @@ import com.shopping.portal.dto.ItemReviewDto;
 import com.shopping.portal.entity.ItemCategoriesEntity;
 import com.shopping.portal.entity.ItemEntity;
 import com.shopping.portal.entity.ItemReviewEntity;
+import com.shopping.portal.repository.ItemRepository;
 import com.shopping.portal.repository.ItemReviewRepository;
-import com.shopping.portal.request.BaseRequest;
-import com.shopping.portal.request.ItemRequest;
-import com.shopping.portal.request.ItemReviewRequest;
+import com.shopping.portal.request.*;
 import com.shopping.portal.response.BaseResponse;
 import com.shopping.portal.response.ItemResponse;
 import com.shopping.portal.response.ItemReviewResponse;
@@ -42,6 +41,9 @@ public class ItemBusinessImpl implements ItemBusiness {
 
     @Autowired
     ItemReviewService itemReviewService;
+
+    @Autowired
+    ItemRepository itemRepository;
 
 
 
@@ -195,11 +197,61 @@ public class ItemBusinessImpl implements ItemBusiness {
 
     }
 
+
     private void checkUserCommentEligibility(String user_name,ItemReviewRequest request) {
 
         if(request.getUserName().equals(user_name)){
             flag_eligible=false;
         }
+
+    }
+
+    //Admin
+
+    @Override
+    public BaseResponse deleteItemByUserName(ItemDeleteRequest itemDeleteRequest) {
+
+            ItemEntity itemEntity = itemRepository.findByUserName(itemDeleteRequest.getUserName());
+
+        if(itemEntity.getUserName().equals(itemDeleteRequest.getUserName())){
+            itemRepository.delete(itemEntity);
+
+            return BaseResponse.builder().responseCode(Constants.SUCCESS_RESPONSE_CODE)
+                    .responseMessage(configurationUtil.getMessage(Constants.SUCCESS_RESPONSE_CODE)).response(itemEntity).build();
+
+        }else{
+
+            return BaseResponse.builder().responseCode(Constants.FAILURE_RESPONSE_CODE)
+                    .responseMessage(configurationUtil.getMessage(Constants.FAILURE_RESPONSE_CODE)).build();
+
+        }
+    }
+
+
+    @Override
+    public BaseResponse addItem(ItemAddRequest itemAddRequest) {
+
+        ItemEntity itemEntity = new ItemEntity();
+
+        /*Note
+             in database its type is integer but in itemCategoryEntity class datatype is itmeCategory
+             if you change the datatype in entity class so we should also change datatype of below mentioned
+             fields in itemEntiy, itemAddRequest classes
+        * */
+
+        //itemEntity.setCategory(itemAddRequest.getCategoryId());
+        itemEntity.setDeliveryCityId(itemAddRequest.getDeliverCityId());
+        itemEntity.setDetails(itemAddRequest.getDetails());
+        itemEntity.setImageUrl(itemAddRequest.getImageUrl());
+        itemEntity.setIsBlocked(itemAddRequest.getIsBlocked());
+        itemEntity.setItemName(itemAddRequest.getItemName());
+        itemEntity.setItemPrice(itemAddRequest.getItemPrice()); //datatype problem(solution is change datatype in all places)
+        itemEntity.setItemStock(itemAddRequest.getItemStock()); //datatype problem(solution is change datatype in all places)
+        itemEntity.setUserName(itemAddRequest.getUserName());
+
+        itemService.save(itemEntity);
+        return BaseResponse.builder().responseCode(Constants.SUCCESS_RESPONSE_CODE)
+                .responseMessage(configurationUtil.getMessage(Constants.SUCCESS_RESPONSE_CODE)).build();
 
     }
 

@@ -16,7 +16,7 @@ public class ItemEntity {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private  String id;
+    private  String id; //need to change its data type to integer
 
     @NonNull
     @ManyToOne(fetch = FetchType.LAZY)
@@ -31,7 +31,7 @@ public class ItemEntity {
     private String itemName;
 
     @Column(name = "item_price")
-    private String itemPrice;
+    private String itemPrice;  //in database datatype is double
 
     @Column(name = "item_stock")
     private  String itemStock;
