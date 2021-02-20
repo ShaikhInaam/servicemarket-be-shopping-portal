@@ -16,7 +16,7 @@ public class ItemEntity {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private  String id;
+    private  Integer id;
 
     @NonNull
     @ManyToOne(fetch = FetchType.LAZY)
@@ -31,10 +31,10 @@ public class ItemEntity {
     private String itemName;
 
     @Column(name = "item_price")
-    private String itemPrice;
+    private Double itemPrice;
 
     @Column(name = "item_stock")
-    private  String itemStock;
+    private  Integer itemStock;
 
     @Column(name = "image_url")
     private  String imageUrl;

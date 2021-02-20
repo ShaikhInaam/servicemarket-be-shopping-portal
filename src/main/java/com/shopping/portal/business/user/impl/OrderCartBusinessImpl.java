@@ -4,7 +4,7 @@ import com.shopping.portal.business.user.base.OrderCartBusiness;
 import com.shopping.portal.entity.OrderCartEntity;
 import com.shopping.portal.repository.OrderCartRepository;
 import com.shopping.portal.request.OrderCartRequest;
-import com.shopping.portal.response.BaseResponse;
+import com.shopping.portal.Response.BaseResponse;
 import com.shopping.portal.util.ConfigurationUtil;
 import com.shopping.portal.util.Constants;
 import org.springframework.beans.factory.annotation.Autowired;

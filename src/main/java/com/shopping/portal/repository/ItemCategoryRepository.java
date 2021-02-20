@@ -25,6 +25,8 @@ public interface ItemCategoryRepository extends JpaRepository<ItemCategoriesEnti
 
 
 
+
+
     // for admin
 
 

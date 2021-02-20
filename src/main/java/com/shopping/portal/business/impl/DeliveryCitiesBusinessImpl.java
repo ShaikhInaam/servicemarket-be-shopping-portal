@@ -4,7 +4,7 @@ import com.shopping.portal.business.base.DeliveryCitiesBusiness;
 import com.shopping.portal.entity.DeliveryCitiesEntity;
 import com.shopping.portal.repository.DeliveryCitiesRepository;
 import com.shopping.portal.request.DeliveryCitiesRequest;
-import com.shopping.portal.response.BaseResponse;
+import com.shopping.portal.Response.BaseResponse;
 import com.shopping.portal.util.ConfigurationUtil;
 import com.shopping.portal.util.Constants;
 import org.springframework.beans.factory.annotation.Autowired;

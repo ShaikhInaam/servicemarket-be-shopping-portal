@@ -1,8 +1,8 @@
-package com.shopping.portal.service.user.base;
+package com.shopping.portal.service.base;
 
 import com.shopping.portal.entity.DeliveryChargesEntity;
-import com.shopping.portal.request.ItemRequest;
-import com.shopping.portal.response.BaseResponse;
+import com.shopping.portal.Request.ItemRequest;
+import com.shopping.portal.Response.BaseResponse;
 
 import java.util.List;
 

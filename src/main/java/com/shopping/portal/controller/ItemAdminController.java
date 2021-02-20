@@ -1,8 +1,11 @@
 package com.shopping.portal.controller;
 
-import com.shopping.portal.business.base.DeliveryChargesBusiness;
 import com.shopping.portal.Request.BaseRequest;
+import com.shopping.portal.Request.ItemRequest;
+import com.shopping.portal.Request.ItemUpdateRequest;
 import com.shopping.portal.Response.BaseResponse;
+import com.shopping.portal.business.base.ItemUpdateBusiness;
+import com.shopping.portal.business.user.base.ItemBusiness;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,16 +16,19 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping("/charges")
-public class DeliveryChargesController {
+@RequestMapping("/itemAdmin")
+public class ItemAdminController {
 
     @Autowired
-    DeliveryChargesBusiness deliveryCharges;
+    ItemUpdateBusiness itemUpdateBusinessBusiness;
 
-    @PostMapping("/getAll")
-    public ResponseEntity<BaseResponse> getAllCityCharges(@Valid @RequestBody BaseRequest request) {
 
-        return ResponseEntity.ok(deliveryCharges.getAllCharges(request));
+    @PostMapping("/update")
+    public ResponseEntity<BaseResponse> updateItem(@Valid @RequestBody ItemUpdateRequest request){
+
+        return ResponseEntity.ok(itemUpdateBusinessBusiness.updateItemDetails(request));
 
     }
+
+
 }

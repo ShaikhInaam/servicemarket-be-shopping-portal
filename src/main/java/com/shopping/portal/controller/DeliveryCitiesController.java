@@ -3,7 +3,7 @@ package com.shopping.portal.controller;
 
 import com.shopping.portal.business.base.DeliveryCitiesBusiness;
 import com.shopping.portal.request.DeliveryCitiesRequest;
-import com.shopping.portal.response.BaseResponse;
+import com.shopping.portal.Response.BaseResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
